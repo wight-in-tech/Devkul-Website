@@ -1,0 +1,193 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 100%;
+    min-height: 10vh;
+    padding: 5px ;
+}
+
+nav {
+ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+.nav-left {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-left img,
+.nav-left h1 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+}
+
+        
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+   
+    padding-right: 30px ;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 60px ;
+    
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    height:52px;
+   min-width: 137px;
+    
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+h2{
+  font-weight:bold;
+}
+.HomePage {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.text {
+    max-width: 60%;
+    padding-right: 20px;
+    font-size:4;
+    line-height:150%;
+    text-align: center;
+    color: #828282;
+}
+.text h2{
+  color: #000;
+  font-weight: Bold;
+  font-size: 40;
+}
+
+.buttons {
+    margin-top: 10px; 
+}
+.community {
+    max-width: 381px;
+    height: 462px;
+    border-radius: 15px;
+    padding-left: 60px;
+}
+hr {
+    border: 15px solid black;
+    margin: 20px 0;
+    /* Adjust the margin as needed */
+}
+.devkul-text {
+    font-weight: bold;
+    /* Make the text bold */
+    margin-left: 20px;
+    /* Add spacing between logo and text */
+}
+
+
+.community-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* Add some spacing between the columns */
+}
+
+.community-image img {
+    width: 40%;
+    border-radius: 40px;
+    margin-left: 200px;
+    /* Add margin from the left */
+}
+.community-content{
+    text-align: center;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-left: 100px;
+
+}
+.Uni-Resources .nav-links {
+    margin-left: 20px;
+    /* Adjust as needed */
+    margin-right: 20px;
+    /* Adjust as needed */
+}
+.Uni-Resources .nav-left{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+/* Make the text bold */
+.Uni-Resources .nav-links a {
+    font-weight: bold;
+}
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-container a{
+    color: #000;
+    text-decoration: none;
+
+}
+.image-container a h3{
+    font-size: 24;
+    font-weight: bold;
+    
+}
+.image-item {
+    text-align: left;
+    width: 80%;
+    margin-left: 80px;
+}
+
+.image-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
