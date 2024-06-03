@@ -2,6 +2,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 100vmax;
     
 }
 
@@ -191,3 +192,30 @@ hr {
     cursor:pointer;
 }
 
+
+.blg-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.blg-img {
+  flex: 1;
+    margin-right: 20px;
+
+}
+
+.blg-img img {
+  
+  max-width: 381px;
+  height: 462px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.blg-content {
+ 
+  flex: 2;
+  flex-direction: column;
+}
