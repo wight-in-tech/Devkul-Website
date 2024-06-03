@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devkul Community</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devkul Community</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 </head>
+
 <body>
   <div class="container" style="padding: 30px 0px 0 0;">
     <nav class="navbar">
-      <div class="nav-left" style="margin-left: 40px;">
+      <div class="nav-left">
         <img src="https://devkul.in/assets/logo.png" class="logo" alt="Devkul Logo">
-        <span class="devkul-text" style="margin-left: 20px; font-weight: bold; font-size: 50px;">DEVKUL</span>
+        <span class="devkul-text">DEVKUL</span>
       </div>
-      <ul class="nav-links" style="margin-right: 40px; font-weight: bold;">
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Uni-resources</a></li>
+      <ul class="nav-links">
+        <li><a href="#">Blogs</a>
+          <div class="SubMenu-1">
+            <ul>
+              <li><a href="#">Academic</a></li>
+              <li><a href="#">Un-academic</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Work</a>
+          <div class="SubMenu-1">
+            <ul>
+              <li><a href="#">Full-Time Job</a></li>
+              <li><a href="#">Internships</a></li>
+              <li><a href="#">Freelance</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Uni-resources</a>
+          <div class="SubMenu-1">
+            <ul>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Notes</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="#">PYQs</a></li>
+            </ul>
+          </div>
+        </li>
         <li><a href="#">Roadmaps</a></li>
         <li><button class="button">Join Devkul</button></li>
       </ul>
@@ -30,17 +60,17 @@
   <div class="community-container">
     <div class="community-content">
       <h2>Devkul Community</h2>
-      <p style="color: grey;">A Community made by learners for learners. Be a part of us today; learn and help your peers to learn, let's be better together. Code, Connect, Contribute.</p>
+      <p>A Community made by learners for learners. Be a part of us today; learn and help your peers to learn, let's be better together. Code, Connect, Contribute.</p>
       <div class="buttons">
-        <button class="button" style="font-size: 20px;">Become a member</button>
-        <button class="button" style="font-size: 20px;">Become a contributor</button>
+        <button class="button">Become a member</button>
+        <button class="button">Become a contributor</button>
       </div>
     </div>
     <div class="community-image">
       <img src="https://devkul.in/assets/members-img/work.jpeg" alt="Community photo">
     </div>
   </div>
-  
+
   <section class="Resources">
     <div class="Uni-Resources">
       <nav class="content">
@@ -54,31 +84,39 @@
         </ul>
       </nav>
     </div>
-  
+
     <div class="image-container">
       <div class="image-item">
         <img src="https://devkul.in/assets/resource-img/books.jpg" alt="Random Image 1">
-        <a href="#"><h3>Notes</h3></a>
+        <a href="#">
+          <h3>Notes</h3>
+        </a>
         <p><br>Description of your first project</p>
       </div>
       <div class="image-item">
         <img src="https://devkul.in/assets/resource-img/websites.jpg" alt="Random Image 2">
-        <a href="#"><h3>Books and Syllabus</h3></a>
+        <a href="#">
+          <h3>Books and Syllabus</h3>
+        </a>
         <p><br>Description of your second work</p>
       </div>
       <div class="image-item">
         <img src="https://devkul.in/assets/events-img/future-events.jpg" alt="Random Image 3">
-        <a href="#"><h3>PYQs</h3></a>
+        <a href="#">
+          <h3>PYQs</h3>
+        </a>
         <p><br>Description of your third creation</p>
       </div>
       <div class="image-item">
         <img src="https://devkul.in/assets/resource-img/q&a.jpg" alt="Random Image 4">
-        <a href="#"><h3>Curated-Playlist</h3></a>
+        <a href="#">
+          <h3>Curated-Playlist</h3>
+        </a>
         <p><br>Description of your fourth endeavor</p>
       </div>
     </div>
   </section>
-  
+
   <section class="Blogs">
     <nav class="navbar">
       <div class="nav-left">
@@ -91,21 +129,40 @@
       </div>
       <div class="blg-contents">
         <div class="blg-content">
-          <h3><i class="fas fa-book"></i> Academic Blogs</h3>
-          <p style="color: grey;">Blogs related to things that you are possibly studying in your course</p>
+          <h3><i class="fa-solid fa-school"></i> Academic Blogs</h3>
+          <p>Blogs related to things that you are possibly studying in your course</p>
           <div class="buttons">
-            <button class="button" style="font-size: 20px;"><i class="fas fa-arrow-right"></i> Check out</button>
+            <button class="button"> Check out</button>
           </div>
         </div>
         <div class="blg-content">
-          <h3><i class="fas fa-pen"></i> Un-academic Blogs</h3>
-          <p style="color: grey;">Blogs that are for general use cases, mostly non-technical blogs that will help you be aware of what is happening in this fast-paced environment.</p>
+          <h3><i class="fa-solid fa-business-time"></i> Un-academic Blogs</h3>
+          <p>Blogs that are for general use cases, mostly non-technical blogs that will help you be aware of what is happening in this fast-paced environment.</p>
           <div class="buttons">
-            <button class="button" style="font-size: 20px;"><i class="fas fa-arrow-right"></i> Check out</button>
+            <button class="button"> Check out</button>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="AboutUs">
+    <h1 class="ad">About Devkul</h1>
+    <div class="Container">
+      <div class="con">
+        <p>If you ask us, we honestly don't know where we are heading, what we will offer, and what not... Everything seems distant right now. Our aim is to make the learning phase of students easier and help them feel less overwhelmed with their already hectic schedules.</p>
+        <div class="social">
+          <i class="instagram"><ion-icon name="logo-instagram"></ion-icon></i>
+          <i class="twitter"><ion-icon name="logo-twitter"></ion-icon></i>
+          <i class="linkedin"><ion-icon name="logo-linkedin"></ion-icon></i>
+          <i class="youtube"><ion-icon name="logo-youtube"></ion-icon></i>
+        </div>
+      </div>
+      <div class="AboutUs-Img">
+        <img src="https://devkul.in/assets/members-img/work.jpeg" alt="About Us Image">
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
