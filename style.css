@@ -485,7 +485,7 @@ hr {
     } 
     .column {
       flex: 0 0 33.33%;
-      max-width: 33.33%;
+      max-width: 30.33%;
       padding: 0 1em;
     }
   }
