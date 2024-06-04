@@ -11,6 +11,416 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+  <style>
+    body {
+    
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100vmax;
+    
+    overflow-x: hidden;
+}
+
+
+
+p{
+  color: #828282;
+}
+
+.container {
+    width: 100%;
+    min-height: 10vh;
+    padding: 5px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.devkul-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+
+
+.nav-links li:hover {
+    background-color: #000; /* Changed background color on hover */
+}
+
+.nav-links li:hover a {
+    color: #fff;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px; /* Reduced margin for better spacing */
+    padding: 15px 25px; /* Adjusted padding for wider black background */
+    position: relative;
+}
+
+
+
+
+.SubMenu-1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    border-radius: 3px;
+    min-width: 180px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover .SubMenu-1 {
+    display: block;
+}
+
+.SubMenu-1 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.SubMenu-1 ul li {
+    padding: 10px 20px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.SubMenu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.SubMenu-1 ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.SubMenu-1 ul li:hover {
+    background-color: #333;
+}
+
+
+.button {
+    display: inline-block;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    height: 52px;
+    min-width: 137px;
+
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.HomePage {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.text {
+    max-width: 60%;
+    padding-right: 20px;
+    font-size: 4;
+    line-height: 150%;
+    text-align: center;
+    color: #828282;
+}
+
+.text h2 {
+    color: #000;
+    font-weight: Bold;
+    font-size: 40;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.community {
+    max-width: 381px;
+    height: 462px;
+    border-radius: 15px;
+    padding-left: 60px;
+}
+
+hr {
+    border: 5px solid black;
+    margin: 20px 0;
+    /* Adjust the margin as needed */
+}
+
+.devkul-text {
+    font-weight: bold;
+    /* Make the text bold */
+    margin-left: 20px;
+    /* Add spacing between logo and text */
+}
+
+
+.community-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* Add some spacing between the columns */
+}
+
+.community-image img {
+    width: 40%;
+    border-radius: 40px;
+    margin-left: 200px;
+    /* Add margin from the left */
+}
+
+.community-content {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-left: 100px;
+
+}
+
+.Uni-Resources .nav-links {
+    margin-left: 20px;
+    /* Adjust as needed */
+    margin-right: 20px;
+    /* Adjust as needed */
+}
+
+.Uni-Resources .nav-left {
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+/* Make the text bold */
+.Uni-Resources .nav-links a {
+    font-weight: bold;
+}
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-container a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.image-container a h3 {
+    font-size: 24;
+    font-weight: bold;
+
+}
+
+.image-item {
+    text-align: left;
+    width: 80%;
+    margin-left: 80px;
+}
+
+.image-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.blg-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.blg-img {
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+.blg-img img {
+
+    max-width: 381px;
+    height: 462px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.blg-content {
+
+    flex: 2;
+    flex-direction: column;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: -100px;
+}
+
+.con {
+    margin-left: 100px;
+    margin-right: 40px;
+    flex: 1;
+    background-color: #212121;
+    border-top-right-radius: 30px;
+    padding-left: 20px;
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+    
+}
+
+.con h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.con p {
+    width: 80%;
+    line-height: 1.5;
+}
+.ad{
+    margin-left: 280px;
+    color: aliceblue;
+    font-size: 40px;
+    padding-top: 100px;
+    
+    
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social i {
+    margin-right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social i:hover {
+    font-size: 3rem;
+}
+
+.instagram:hover {
+    color: #dd2a7b;
+}
+.instagram{
+    color: aliceblue;
+}
+.twitter:hover {
+    color: #1da1f2;
+}
+.twitter {
+    color:aliceblue;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+}
+.linkedin {
+    color: aliceblue;
+}
+
+.youtube:hover {
+    color: #e62117;
+}
+.youtube {
+    color:aliceblue;
+}
+
+.AboutUs-Img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUs-Img img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.AboutUs{
+    background-color: #000;
+}
+
+
+  </style>
+
 
 </head>
 
@@ -23,31 +433,13 @@
       </div>
       <ul class="nav-links">
         <li><a href="#">Blogs</a>
-          <div class="SubMenu-1">
-            <ul>
-              <li><a href="#">Academic</a></li>
-              <li><a href="#">Un-academic</a></li>
-            </ul>
-          </div>
+         
         </li>
         <li><a href="#">Work</a>
-          <div class="SubMenu-1">
-            <ul>
-              <li><a href="#">Full-Time Job</a></li>
-              <li><a href="#">Internships</a></li>
-              <li><a href="#">Freelance</a></li>
-            </ul>
-          </div>
+          
         </li>
         <li><a href="#">Uni-resources</a>
-          <div class="SubMenu-1">
-            <ul>
-              <li><a href="#">Books</a></li>
-              <li><a href="#">Notes</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">PYQs</a></li>
-            </ul>
-          </div>
+          
         </li>
         <li><a href="#">Roadmaps</a></li>
         <li><button class="button">Join Devkul</button></li>
@@ -163,6 +555,90 @@
       </div>
     </div>
   </section>
+
+
+  <section class="OurTeam">
+    <div class="row">
+      <h2>Meet the Team</h2>
+    </div>
+    <div class="row">
+      
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="profile-img-1.png" />
+          </div>
+          <h3>Chetan Bagal</h3>
+          <p>Founder & shit</p>
+          <div class="icons">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="profile-img-2.png" />
+          </div>
+          <h3>Rohit Bhadane</h3>
+          <p>Developer</p>
+          <div class="icons">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="profile-img-3.png" />
+          </div>
+          <h3>Khushal Kapse</h3>
+          <p>Designer</p>
+          <div class="icons">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 </body>
 
 </html>
