@@ -1,17 +1,15 @@
 body {
-    
+
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     max-width: 100vmax;
-    
+
     overflow-x: hidden;
 }
 
-
-
-p{
-  color: #828282;
+p {
+    color: #828282;
 }
 
 .container {
@@ -70,7 +68,8 @@ nav {
 
 
 .nav-links li:hover {
-    background-color: #000; /* Changed background color on hover */
+    background-color: #000;
+    /* Changed background color on hover */
 }
 
 .nav-links li:hover a {
@@ -79,8 +78,10 @@ nav {
 
 nav ul li {
     display: inline-block;
-    margin-left: 20px; /* Reduced margin for better spacing */
-    padding: 15px 25px; /* Adjusted padding for wider black background */
+    margin-left: 20px;
+    /* Reduced margin for better spacing */
+    padding: 15px 25px;
+    /* Adjusted padding for wider black background */
     position: relative;
 }
 
@@ -324,7 +325,7 @@ hr {
     text-align: center;
     width: 70%;
     font-size: 18px;
-    
+
 }
 
 .con h1 {
@@ -337,13 +338,14 @@ hr {
     width: 80%;
     line-height: 1.5;
 }
-.ad{
+
+.ad {
     margin-left: 280px;
     color: aliceblue;
     font-size: 40px;
     padding-top: 100px;
-    
-    
+
+
 }
 
 .social {
@@ -364,19 +366,23 @@ hr {
 .instagram:hover {
     color: #dd2a7b;
 }
-.instagram{
+
+.instagram {
     color: aliceblue;
 }
+
 .twitter:hover {
     color: #1da1f2;
 }
+
 .twitter {
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .linkedin:hover {
     color: #0077b5;
 }
+
 .linkedin {
     color: aliceblue;
 }
@@ -384,8 +390,9 @@ hr {
 .youtube:hover {
     color: #e62117;
 }
+
 .youtube {
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .AboutUs-Img {
@@ -400,7 +407,8 @@ hr {
     height: auto;
     border-radius: 10px;
 }
-.AboutUs{
+
+.AboutUs {
     background-color: #000;
 }
 
@@ -410,18 +418,21 @@ hr {
     flex-wrap: wrap;
     padding: 2em 1em;
     text-align: center;
-  }
-  .column {
+}
+
+.column {
     width: 100%;
     padding: 0.5em 0;
-  }
-  h1 {
+}
+
+h1 {
     width: 100%;
     text-align: center;
     font-size: 3.5em;
     color: #1f003b;
-  }
-  .card {
+}
+
+.card {
     box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
     padding: 3.5em 1em;
     border-radius: 0.6em;
@@ -429,69 +440,81 @@ hr {
     cursor: pointer;
     transition: 0.3s;
     background-color: #ffffff;
-  }
-  .card .img-container {
+}
+
+.card .img-container {
     width: 8em;
     height: 8em;
     background-color: #a993ff;
     padding: 0.5em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
-  }
-  .card img {
+}
+
+.card img {
     width: 100%;
     border-radius: 50%;
-  }
-  .card h3 {
+}
+
+.card h3 {
     font-weight: 500;
-  }
-  .card p {
+}
+
+.card p {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0.5em 0 2em 0;
     letter-spacing: 2px;
-  }
-  .icons {
+}
+
+.icons {
     width: 50%;
     min-width: 180px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-  }
-  .card a {
+}
+
+.card a {
     text-decoration: none;
-    color: #828282 ;
+    color: #828282;
     font-size: 1.4em;
-  }
-  .card:hover {
+}
+
+.card:hover {
     background: #000;
     color: #ffffff;
-  }
-  .card:hover .img-container {
+}
+
+.card:hover .img-container {
     transform: scale(1.15);
-  }
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
     section {
-      padding: 1em 7em;
+        padding: 1em 7em;
     }
-  }
-  @media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 992px) {
     section {
-      padding: 1em;
+        padding: 1em;
     }
+
     .card {
-      padding: 5em 1em;
-       
+        padding: 5em 1em;
+
     }
+
     .column {
-      flex: 0 0 33.33%;
-      max-width: 30.33%;
-      padding: 0 1em;
+        flex: 0 0 33.33%;
+        max-width: 30.33%;
+        padding: 0 1em;
     }
-  }
+}
 
 
-  footer {
+footer {
     position: fixed;
     bottom: 0;
 }
@@ -500,6 +523,7 @@ hr {
     footer {
         position: static;
     }
+
     header {
         padding-top: 40px;
     }
@@ -515,7 +539,9 @@ hr {
     margin-top: 80px;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
 }
@@ -652,13 +678,17 @@ hr {
 }
 
 @media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
     }
+
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}       
+}
