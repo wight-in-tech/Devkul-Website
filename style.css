@@ -1,11 +1,31 @@
 body {
-    position: relative;
+
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     max-width: 100vmax;
+    position: relative;
 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     overflow-x: hidden;
+}
+.ad {
+    margin-left: 280px;
+    color: aliceblue;
+    font-size: 40px;
+    padding-top: 100px;
+
+
+}
+::-webkit-scrollbar {
+    width: 0px;
+
+    background: transparent;
+    
+}
+.ad{
+    align-items: center;
 }
 
 p {
@@ -233,9 +253,9 @@ hr {
 
 .Uni-Resources .nav-links {
     margin-left: 20px;
-    /* Adjust as needed */
+   
     margin-right: 20px;
-    /* Adjust as needed */
+   
 }
 
 .Uni-Resources .nav-left {
@@ -243,7 +263,7 @@ hr {
     margin-bottom: 30px;
 }
 
-/* Make the text bold */
+
 .Uni-Resources .nav-links a {
     font-weight: bold;
 }
@@ -454,6 +474,7 @@ h1 {
 .card img {
     width: 100%;
     border-radius: 50%;
+    height: 100%;
 }
 
 .card h3 {
@@ -554,9 +575,10 @@ footer {
 
 .footer-distributed h3 {
     color: #ffffff;
-    font: normal 36px 'Cookie', cursive;
+    font-family: 'Inter', sans-serif;
     margin: 0;
 }
+
 
 
 .footer-distributed h3 span {
